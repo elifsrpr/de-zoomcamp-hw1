@@ -1,3 +1,7 @@
+networks:
+  pg-networks: # Define the custom network
+    driver: bridge
+
 services:
   db:
     container_name: postgres
@@ -10,6 +14,8 @@ services:
       - '5433:5432'
     volumes:
       - vol-pgdata:/var/lib/postgresql/data
+    networks:
+      - pg-networks
 
   pgadmin:
     container_name: pgadmin
@@ -21,6 +27,8 @@ services:
       - "8080:80"
     volumes:
       - vol-pgadmin_data:/var/lib/pgadmin  
+    networks:
+      - pg-networks
 
 volumes:
   vol-pgdata:
