@@ -1,20 +1,16 @@
 
 -> Question 1. Answer
-    ![alt text](image.png)
+![alt text](image.png)
 
 
--> Question 2. Understanding Docker networking and docker-compose
+-> Question 2. Answer
 
-answer:
-    db:5432
-
--> Question 3. Trip Segmentation Count
-
-answer:
-    104,802; 198,924; 109,603; 27,678; 35,189
+![alt text](image-9.png)
 
 
-    1. Up to 1 mile
+-> Question 3. Answer
+
+ Up to 1 mile
 
         SELECT 
             count(*) 
@@ -23,8 +19,10 @@ answer:
         and cast(lpep_dropoff_datetime as date) < '2019-11-01'
         and trip_distance <= 1
 
+![alt text](image-4.png)
 
-    2. In between 1 (exclusive) and 3 miles (inclusive)
+
+ In between 1 (exclusive) and 3 miles (inclusive)
 
         SELECT 
             count(*) 
@@ -34,7 +32,10 @@ answer:
         and trip_distance <= 3 
         and trip_distance > 1
 
-    3. In between 3 (exclusive) and 7 miles (inclusive)
+![alt text](image-5.png)
+
+
+ In between 3 (exclusive) and 7 miles (inclusive)
 
         SELECT 
             count(*) 
@@ -44,7 +45,10 @@ answer:
         and trip_distance <= 7 
         and trip_distance > 3
 
-    4. In between 7 (exclusive) and 10 miles (inclusive)
+![alt text](image-6.png)
+
+
+ In between 7 (exclusive) and 10 miles (inclusive)
 
         SELECT 
             count(*) 
@@ -53,6 +57,9 @@ answer:
         and cast(lpep_dropoff_datetime as date) < '2019-11-01'
         and trip_distance <= 10 
         and trip_distance > 7
+
+![alt text](image-7.png)
+
 
     5. over 10:
 
@@ -63,22 +70,21 @@ answer:
         and cast(lpep_dropoff_datetime as date) < '2019-11-01'
         and trip_distance > 10
 
--> Question 4. Longest trip for each day
+![alt text](image-8.png)
 
-answer:
-    2019-10-31
+
+-> Question 4. Answer
 
     SELECT 
         *
     FROM public.green_tripdata
     order by trip_distance desc
 
+![alt text](image-3.png)
 
--> Question 5. Three biggest pickup zones
 
-answer: 
+-> Question 5. Answer
 
-    East Harlem North, East Harlem South, Morningside Heights
 
     SELECT 
         "Zone"
@@ -89,13 +95,10 @@ answer:
     group by "Zone"
     order by total_amount desc
 
+![alt text](image-2.png)
 
 
--> Question 6. Largest tip
-
-answer:
-
-    JFK Airport
+-> Question 6. Answer
 
     SELECT 
         "Zone"
@@ -105,3 +108,5 @@ answer:
     where cast(lpep_pickup_datetime as date) between '2019-10-01' and '2019-10-31'
         and "PULocationID" = 74
     order by tip_amount desc
+
+![alt text](image-1.png)
