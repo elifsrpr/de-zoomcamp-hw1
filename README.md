@@ -1,13 +1,13 @@
 
 -> Question 1. Answer
 
-![alt text](image-10.png)
+![alt text](images/image-10.png)
 
 
 
 -> Question 2. Answer
 
-![alt text](image-9.png)
+![alt text](images/image-9.png)
 
 
 -> Question 3. Answer
@@ -22,7 +22,7 @@
         and cast(lpep_dropoff_datetime as date) < '2019-11-01'
         and trip_distance <= 1
 
-![alt text](image-4.png)
+![alt text](images/image-4.png)
 
 
 
@@ -37,7 +37,7 @@
         and trip_distance <= 3 
         and trip_distance > 1
 
-![alt text](image-5.png)
+![alt text](images/image-5.png)
 
 
 
@@ -52,7 +52,7 @@
         and trip_distance <= 7 
         and trip_distance > 3
 
-![alt text](image-6.png)
+![alt text](images/image-6.png)
 
 
 
@@ -67,7 +67,7 @@
         and trip_distance <= 10 
         and trip_distance > 7
 
-![alt text](image-7.png)
+![alt text](images/image-7.png)
 
 
 
@@ -80,7 +80,7 @@ Over 10:
         and cast(lpep_dropoff_datetime as date) < '2019-11-01'
         and trip_distance > 10
 
-![alt text](image-8.png)
+![alt text](images/image-8.png)
 
 
 
@@ -92,7 +92,7 @@ Over 10:
     FROM public.green_tripdata
     order by trip_distance desc
 
-![alt text](image-3.png)
+![alt text](images/image-3.png)
 
 
 
@@ -109,7 +109,7 @@ Over 10:
     group by "Zone"
     order by total_amount desc
 
-![alt text](image-2.png)
+![alt text](images/image-2.png)
 
 
 
@@ -125,4 +125,4 @@ Over 10:
         and "PULocationID" = 74
     order by tip_amount desc
 
-![alt text](image-1.png)
+![alt text](images/image-1.png)
