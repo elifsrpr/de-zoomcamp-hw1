@@ -1,16 +1,14 @@
 
-------Question 1. Understanding docker first run
-
-answer:
-    24.3.1
+-> Question 1. Answer
+    ![alt text](image.png)
 
 
-------Question 2. Understanding Docker networking and docker-compose
+-> Question 2. Understanding Docker networking and docker-compose
 
 answer:
     db:5432
 
-------Question 3. Trip Segmentation Count
+-> Question 3. Trip Segmentation Count
 
 answer:
     104,802; 198,924; 109,603; 27,678; 35,189
@@ -65,7 +63,7 @@ answer:
         and cast(lpep_dropoff_datetime as date) < '2019-11-01'
         and trip_distance > 10
 
-------Question 4. Longest trip for each day
+-> Question 4. Longest trip for each day
 
 answer:
     2019-10-31
@@ -76,7 +74,7 @@ answer:
     order by trip_distance desc
 
 
-------Question 5. Three biggest pickup zones
+-> Question 5. Three biggest pickup zones
 
 answer: 
 
@@ -93,7 +91,7 @@ answer:
 
 
 
-------Question 6. Largest tip
+-> Question 6. Largest tip
 
 answer:
 
