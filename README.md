@@ -1,6 +1,8 @@
 
 -> Question 1. Answer
-![alt text](image.png)
+
+![alt text](image-10.png)
+
 
 
 -> Question 2. Answer
@@ -9,6 +11,7 @@
 
 
 -> Question 3. Answer
+
 
  Up to 1 mile
 
@@ -20,6 +23,8 @@
         and trip_distance <= 1
 
 ![alt text](image-4.png)
+
+
 
 
  In between 1 (exclusive) and 3 miles (inclusive)
@@ -35,6 +40,8 @@
 ![alt text](image-5.png)
 
 
+
+
  In between 3 (exclusive) and 7 miles (inclusive)
 
         SELECT 
@@ -46,6 +53,8 @@
         and trip_distance > 3
 
 ![alt text](image-6.png)
+
+
 
 
  In between 7 (exclusive) and 10 miles (inclusive)
@@ -61,7 +70,8 @@
 ![alt text](image-7.png)
 
 
-    5. over 10:
+
+Over 10:
 
         SELECT 
             count(*) 
@@ -73,6 +83,8 @@
 ![alt text](image-8.png)
 
 
+
+
 -> Question 4. Answer
 
     SELECT 
@@ -81,6 +93,8 @@
     order by trip_distance desc
 
 ![alt text](image-3.png)
+
+
 
 
 -> Question 5. Answer
@@ -96,6 +110,8 @@
     order by total_amount desc
 
 ![alt text](image-2.png)
+
+
 
 
 -> Question 6. Answer
